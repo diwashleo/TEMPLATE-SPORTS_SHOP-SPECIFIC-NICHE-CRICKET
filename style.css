@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header li,a {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #d2d9f6;
+    /* margin-bottom: 0%; */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    cursor: pointer;
+    color: blue;
+    background-color: #d2d9f6;
+}
+
+.nav__links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.nav__links li a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav__links li a:hover,.nav__links li a.onsite {
+    color: green;
+}
+
+.nav__links li a.onsite::after, .nav__links li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* ###################### jersey page section ########################## */
+
+#hero {
+    background-image: url("images/virat_rcb.png");
+    height: 70vh;
+    /* color: #E3E6F3; */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top 25% right 15%;
+    background-color: #E3E6F3;
+    padding: 0 80px;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h3{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: red;
+    padding-bottom: 15px;
+}
+
+/* #################################feature section########################## */
+
+.section-p1 {
+    padding: 40px 280px;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px yellow;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 60px rgb(233, 233, 174);
+}
+
+#feature .fe-box h5 {
+    color: #088178;
+}
+
+#feature #img-1 img {
+    width: 150px;
+    height: 100px;
+}
+
+#feature #img-2 img {
+    width: 120px;
+    height: 100px;
+}
+
+#feature #img-3 img {
+    width: 100px;
+    height: 100px;
+}
+
+#feature #img-4 img {
+    width: 100px;
+    height: 100px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ########################product1#################### */
+
+.section-p2{
+    padding: 40px 20px;
+}
+
+#product1 h2 {
+    font-size: 60px;
+}
+
+#product1 p {
+    font-size: 20px;
+    background-color: rgb(204, 232, 245);
+    display: inline;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px greenyellow;
+    margin: 40px 12px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px goldenrod;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #E3E6F3;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 22px;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro .img-2 {
+    height: 50vh;
+}
+
+/* #####################################newsletter#########################*/
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #66d7f9;
+}
+
+.section-m1 {
+    margin: 30px 0;
+}
+
+#newsletter h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#newsletter p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+.section-p3 {
+    padding: 40px 150px;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding:0 1.25rem;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius:0 ; */
+}
+
+#newsletter .button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 20px;
+    /* border-top-left-radius: 0;
+    border-bottom-left-radius:0 ; */
+}
+
+#newsletter .form {
+    /* display: flex; */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#newsletter .alert {
+    margin: -9px 0 12px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#newsletter .alert.error {
+    color: #721c24;
+    background: rgb(238, 124, 124);
+    border: 1px solid #f5c6cb;
+}
+
+#newsletter .alert.success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+
+/* ###############################footer######################### */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+footer p{
+    font-size: 20px;
+    margin:  0 0 10px 0;
+}
+
+footer a{
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer a:hover{
+    color: rgb(105, 95, 95);
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
